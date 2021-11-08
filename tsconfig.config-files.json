@@ -1,4 +1,5 @@
 {
   "extends": "./tsconfig.json",
+  "exclude": [],
   "include": ["*.config.ts", ".*rc.ts"]
 }

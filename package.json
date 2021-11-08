@@ -9,7 +9,7 @@
     "dist/**"
   ],
   "scripts": {
-    "build": "npm run clean ; tsc --sourceMap --declaration --declarationMap --outDir dist/",
+    "build": "npm run clean ; tsc --sourceMap --declaration --declarationMap --outDir dist/ --rootDir src/",
     "clean": "rm -rf dist",
     "lint": "eslint --cache .",
     "lint:fix": "eslint --cache --fix .",
