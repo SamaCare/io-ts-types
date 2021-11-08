@@ -3,6 +3,7 @@ export { createDateFromString } from "./DateFromString";
 export { DateFromISOString } from "./DateFromISOString";
 export { Int } from "./Int";
 export { NonEmptyString } from "./NonEmptyString";
+export { NumberFromString } from "./NumberFromString";
 export { Port } from "./Port";
 export { PositiveInt } from "./PositiveInt";
 export {
