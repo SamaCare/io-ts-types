@@ -1,6 +1,6 @@
 {
   "name": "@ndhoule/io-ts-types",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "author": "Nathan Houle <nathan@nathanhoule.com>",
   "license": "MIT",
   "description": "Types and codecs for io-ts.",
