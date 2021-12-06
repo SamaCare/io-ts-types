@@ -4,6 +4,12 @@ export interface IntBrand {
 
 export type Int = number & IntBrand;
 
+export type Json = string | number | boolean | null | JsonArray | JsonRecord;
+
+export type JsonArray = Json[];
+
+export type JsonRecord = { [key: string]: Json };
+
 export interface NonEmptyStringBrand {
   readonly NonEmptyString: unique symbol;
 }
