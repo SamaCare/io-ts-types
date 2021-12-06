@@ -3,4 +3,4 @@ import { Port as PortT } from "../types";
 import { Port as PortD } from "./decoder";
 import { Port as PortE } from "./encoder";
 
-export const Port: C.Codec<unknown, string, PortT> = C.make(PortD, PortE);
+export const Port: C.Codec<unknown, number, PortT> = C.make(PortD, PortE);

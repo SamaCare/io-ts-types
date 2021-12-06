@@ -6,7 +6,7 @@ import { Int } from ".";
 
 describe("Int", () => {
   describe("encode()", () => {
-    it("encodes an Int to a string", () => {
+    it("encodes an Int to a number", () => {
       fc.assert(
         fc.property(fc.integer(), (input) => {
           const result = Int.decode(input);
@@ -15,7 +15,7 @@ describe("Int", () => {
           }
           const value = result.right;
 
-          expect(Int.encode(value)).toEqual(input.toString());
+          expect(Int.encode(value)).toEqual(input);
         }),
         { numRuns: 1000 }
       );

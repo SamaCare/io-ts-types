@@ -6,7 +6,7 @@ import { Port } from ".";
 
 describe("Port", () => {
   describe("encode()", () => {
-    it("encodes a Port to a string", () => {
+    it("encodes a Port to a number", () => {
       fc.assert(
         fc.property(fc.integer({ min: 1, max: 65535 }), (input) => {
           const result = Port.decode(input);
@@ -15,7 +15,7 @@ describe("Port", () => {
           }
           const value = result.right;
 
-          expect(Port.encode(value)).toEqual(input.toString());
+          expect(Port.encode(value)).toEqual(input);
         }),
         { numRuns: 1000 }
       );
