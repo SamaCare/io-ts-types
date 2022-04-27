@@ -1,1 +1,1 @@
-# @ndhoule/io-ts-types
+# @samacare/io-ts-types
